@@ -121,8 +121,7 @@ The project is well-documented with clear comments explaining the purpose and fu
 
 2. Set up the PostgreSQL database and update the configuration in `cmd/main.go`
 ```go 
-config.Load(os.Getenv("ENVIRONMENT"), os.Getenv("HTTP_SERVER_ADDRESS"),
-		os.Getenv("DSN"), os.Getenv("MIGRATION_URL"))
+config.Load(os.Getenv("ENVIRONMENT"), os.Getenv("HTTP_SERVER_ADDRESS"), os.Getenv("DSN"))
 ```
 
 3. Start the server:
